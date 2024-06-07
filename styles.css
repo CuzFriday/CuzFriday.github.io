@@ -1,25 +1,26 @@
 
 
 body {
+    height: 1000;
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #1f1e1e; 
+    background: radial-gradient(circle,#1f1e1e, #242222);
 }
 
-a:link {
+.links:link {
     color: inherit;
     text-decoration: none;
     cursor: default;
 }
 
-a:hover {
+.links:hover {
     color: inherit;
     text-decoration: underline;
     cursor: default;
 }
 
-a:visited {
+.links:visited {
     color: inherit;
     cursor: default;
     text-decoration: none;
@@ -30,6 +31,8 @@ header {
     color: #fff;
     font-family: MADEOuterSans-Thin;
     line-height: 1.3;
+    position: sticky;
+    top: 40px;
 }
 
 .header-right {
@@ -50,13 +53,6 @@ img {
     border-radius: 900%;
 }
 
-.mal {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
-
 .namelogo {
     margin-right: auto;
     margin-left: auto;
@@ -65,17 +61,14 @@ img {
 .namelogo-right {
     color: #fff;
     float: right;
-    margin-right: 500px;
-    margin-top: 50px;
-}
-
-.anime:hover {
-    border-bottom: 1px solid #fff; text-decoration: none;
+    margin-right: 50px;
+    margin-top: 80px;
 }
 
 footer {
-    margin-top: 5%;
-    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10%;
+    margin-top: 45%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 /* UnComment these on Addition of these buttons lmao.
