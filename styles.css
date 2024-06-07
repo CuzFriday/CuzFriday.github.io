@@ -73,6 +73,11 @@ img {
     border-bottom: 1px solid #fff; text-decoration: none;
 }
 
+footer {
+    margin-top: 5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* UnComment these on Addition of these buttons lmao.
 .apps:hover {
     border-bottom: 1px solid #fff; text-decoration: none;
