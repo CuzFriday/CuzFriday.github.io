@@ -10,6 +10,11 @@
     font-style: normal;
     }
 
+    .Logo 
+    {
+            transition: opacity 0.2s ease-in-out;
+            opacity: 1; /* Initially visible */
+    }
     
     </style>
 
@@ -25,6 +30,24 @@
     <body>
     <header>
         <img src="Assets/imgs/Profile.jpg" alt="My Profile" class="Logo" width="100" height="100">
+        <script>
+            var lastScrollTop = 0;
+            var image = document.querySelector('.Logo');
+    
+            window.onscroll = function() {
+                var scrolled = window.scrollY;
+    
+                if (scrolled > lastScrollTop) {
+                    // Scrolling Down
+                    image.style.opacity = '0';
+                } else {
+                    // Scrolling Up
+                    image.style.opacity = '1';
+                }
+    
+                lastScrollTop = scrolled;
+            };
+        </script>
         <div class="header-right">
             <a href="https://www.roblox.com/users/84894998/profile" target="_blank" class="links">
                 roblox
@@ -45,11 +68,42 @@
         </div>
 
     </header>
+    <img src="Assets/imgs//gura.gif" width="100" height="100" class="gura">
     <section>
         <img src="Assets/imgs/Friday.png" alt="Friday" class="namelogo" width="600" height="600">
         <div class="namelogo-right">
         </div>
     </section>
+    <footer style="text-align: center; color: #fff;" id="contact" class="Contact"> Contact </footer>
+    <script>
+        var contactid = document.getElementById('contact');
+        var textToCopy = "Fridayworkacc@gmail.com";
+
+        contactid.addEventListener('mouseover', function() {
+             contactid.textContent = "Fridayworkacc@gmail.com";
+             contactid.classList.add('expand');
+        });
+
+        contactid.addEventListener("click", function() {
+            navigator.clipboard.writeText(textToCopy)
+            .then(function() {
+                    // Success message
+                    console.log('Text copied to clipboard');
+                    alert('Copied! for more immediate responses use my discord!');
+                })
+                .catch(function(error) {
+                    // Error message
+                    console.error('Could not copy text: ', error);
+                    alert('Could not copy text. Please try again.');
+                });
+        });
+
+        contactid.addEventListener('mouseleave', function() {
+             contactid.textContent = "Contact";
+             contactid.classList.remove('expand');
+        });
+
+    </script>
     <footer style="text-align: center; color: #fff;"> © Copyright 2024 </footer>
    
     </body>

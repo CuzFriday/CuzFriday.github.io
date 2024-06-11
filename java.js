@@ -1,7 +1,12 @@
+
 window.onscroll = function() { 
     var scrolled = window.scrollY; 
     var documentHeight = document.documentElement.scrollHeight;
-    if (window.innerHeight + scrolled > documentHeight - 20) { 
-        console.log("I need to load some more content here…"); 
-    } 
+    var windowHeight = window.innerHeight;
+
+    // Detect if near bottom
+    if (windowHeight + scrolled > documentHeight - 20) {  
+        // Near bottom of the page, do something
+        console.log("Near bottom of page");
+    };  
 };
