@@ -1,110 +1,189 @@
 <html lang="en">
-    <style>
+  <style>
     @font-face {
-    font-family: 'MADEOuterSans-Thin';
-    src:url('Assets/fonts/MADEOuterSans-Thin.ttf.woff') format('woff'),
-        url('Assets/fonts/MADEOuterSans-Thin.ttf.svg') format('svg'),
-        url('Assets/fonts/MADEOuterSans-Thin.ttf.eot'),
-        url('Assets/fonts/MADEOuterSans-Thin.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
+      font-family: "MADEOuterSans-Thin";
+      src:
+        url("Assets/fonts/MADEOuterSans-Thin.ttf.woff") format("woff"),
+        url("Assets/fonts/MADEOuterSans-Thin.ttf.svg") format("svg"),
+        url("Assets/fonts/MADEOuterSans-Thin.ttf.eot"),
+        url("Assets/fonts/MADEOuterSans-Thin.ttf.eot?#iefix")
+          format("embedded-opentype");
+      font-weight: normal;
+      font-style: normal;
     }
 
-    .Logo 
-    {
-            transition: opacity 0.2s ease-in-out;
-            opacity: 1; /* Initially visible */
+    .Logo {
+      transition: opacity 0.2s ease-in-out;
+      opacity: 1; /* Initially visible */
     }
-    
-    </style>
+  </style>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <title>Friday's Website</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="java.js"></script>
-        <link rel="icon" type="image/x-icon" href="Assets/imgs/favicon.ico">
-       </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Friday's Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="java.js"></script>
+    <link rel="icon" type="image/x-icon" href="Assets/imgs/favicon.ico" />
 
-    <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Jacquard+12&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <header>
-        <img src="Assets/imgs/Profile.jpg" alt="My Profile" class="Logo" width="100" height="100">
-        <script>
-            var lastScrollTop = 0;
-            var image = document.querySelector('.Logo');
-    
-            window.onscroll = function() {
-                var scrolled = window.scrollY;
-    
-                if (scrolled > lastScrollTop) {
-                    // Scrolling Down
-                    image.style.opacity = '0';
-                } else {
-                    // Scrolling Up
-                    image.style.opacity = '1';
-                }
-    
-                lastScrollTop = scrolled;
-            };
-        </script>
-        <div class="header-right">
-            <a href="https://www.roblox.com/users/84894998/profile" target="_blank" class="links">
-                roblox
-            </a>
-            <br>
-            <a href="https://www.twitch.tv/fridaycuz" target="_blank" class="links">
-                twitch
-            </a>
-            <br>
-            <a href="https://discord.gg/6xAY6QUEXw" target="_blank" class="links">
-                discord
-            </a>
-            <br>
-            <a href="https://www.youtube.com/channel/UCgNzE80tzNGEBNdYZXtCdoQ" target="_blank" class="links">
-                youtube
-            </a>  
-            <br>
-        </div>
+      <img
+        src="Assets/imgs/Profile.jpg"
+        alt="My Profile"
+        class="Logo"
+        width="100"
+        height="100"
+      />
+      <script>
+        var lastScrollTop = 0;
+        var image = document.querySelector(".Logo");
 
+        window.onscroll = function () {
+          var scrolled = window.scrollY;
+
+          if (scrolled > lastScrollTop) {
+            // Scrolling Down
+            image.style.opacity = "0";
+          } else {
+            // Scrolling Up
+            image.style.opacity = "1";
+          }
+
+          lastScrollTop = scrolled;
+        };
+      </script>
+      <div class="header-right">
+        <a
+          href="https://www.roblox.com/users/84894998/profile"
+          target="_blank"
+          class="links"
+        >
+          roblox
+        </a>
+        <br />
+        <a href="https://www.twitch.tv/fridaycuz" target="_blank" class="links">
+          twitch
+        </a>
+        <br />
+        <a href="https://discord.gg/6xAY6QUEXw" target="_blank" class="links">
+          discord
+        </a>
+        <br />
+        <a
+          href="https://www.youtube.com/channel/UCgNzE80tzNGEBNdYZXtCdoQ"
+          target="_blank"
+          class="links"
+        >
+          youtube
+        </a>
+        <br />
+      </div>
     </header>
-    <img src="Assets/imgs//gura.gif" width="100" height="100" class="gura">
+    <img src="Assets/imgs//gura.gif" width="100" height="100" class="gura" />
     <section>
-        <img src="Assets/imgs/Friday.png" alt="Friday" class="namelogo" width="600" height="600">
-        <div class="namelogo-right">
-        </div>
+      <img
+        src="Assets/imgs/Friday.png"
+        alt="Friday"
+        class="namelogo"
+        width="600"
+        height="600"
+      />
+      <div class="namelogo-right">
+        <p
+          style="
+            margin-top: 140px;
+            font-size: 50px;
+            font-family: Montserrat;
+            font-weight: bold;
+            text-transform: uppercase;
+          "
+        >
+          hobbyist
+        </p>
+        <p style="width: 600px; word-wrap: break-word; font-family: Hind">
+          Hello, I'm Friday. This is my satirical Github page, which is still
+          under construction. On it, I plan to save software as well as
+          interesting links that I come across while browsing the internet.
+        </p>
+        <p style="width: 600px; word-wrap: break-word; font-family: Hind">
+          For your amusement as well as to simplify areas that you may not be
+          aware of!
+        </p>
+      </div>
     </section>
-    <footer style="text-align: center; color: #fff;" id="contact" class="Contact"> Contact </footer>
+    <section2>
+      <p
+        style="
+          font-size: 150px;
+          text-align: center;
+          padding-top: 130;
+          color: #fff;
+        "
+        class="jacquard-12-regular"
+      >
+        Softwares
+      </p>
+    </section2>
+    <section3>
+      <p
+        style="
+          font-size: 150px;
+          text-align: center;
+          padding-top: 400;
+          color: #fff;
+        "
+        class="jacquard-12-regular"
+      >
+        Websites
+      </p>
+    </section3>
+
+    <footer
+      style="text-align: center; color: #fff"
+      id="contact"
+      class="Contact"
+    >
+      Contact
+    </footer>
     <script>
-        var contactid = document.getElementById('contact');
-        var textToCopy = "Fridayworkacc@gmail.com";
+      var contactid = document.getElementById("contact");
+      var textToCopy = "Fridayworkacc@gmail.com";
 
-        contactid.addEventListener('mouseover', function() {
-             contactid.textContent = "Fridayworkacc@gmail.com";
-             contactid.classList.add('expand');
-        });
+      contactid.addEventListener("mouseover", function () {
+        contactid.textContent = "Fridayworkacc@gmail.com";
+        contactid.classList.add("expand");
+      });
 
-        contactid.addEventListener("click", function() {
-            navigator.clipboard.writeText(textToCopy)
-            .then(function() {
-                    // Success message
-                    console.log('Text copied to clipboard');
-                    alert('Copied! for more immediate responses use my discord!');
-                })
-                .catch(function(error) {
-                    // Error message
-                    console.error('Could not copy text: ', error);
-                    alert('Could not copy text. Please try again.');
-                });
-        });
+      contactid.addEventListener("click", function () {
+        navigator.clipboard
+          .writeText(textToCopy)
+          .then(function () {
+            // Success message
+            console.log("Text copied to clipboard");
+            alert("Copied! for more immediate responses use my discord!");
+          })
+          .catch(function (error) {
+            // Error message
+            console.error("Could not copy text: ", error);
+            alert("Could not copy text. Please try again.");
+          });
+      });
 
-        contactid.addEventListener('mouseleave', function() {
-             contactid.textContent = "Contact";
-             contactid.classList.remove('expand');
-        });
-
+      contactid.addEventListener("mouseleave", function () {
+        contactid.textContent = "Contact";
+        contactid.classList.remove("expand");
+      });
     </script>
-    <footer style="text-align: center; color: #fff;"> © Copyright 2024 </footer>
-   
-    </body>
+
+    <footer style="text-align: center; color: #fff">© Copyright 2024</footer>
+  </body>
 </html>
