@@ -1,3 +1,12 @@
+@media only screen and (min-width:768px) {
+
+    .mobile-display{display: none;}
+    .desktop-display{display: block;}
+
+}
+
+/* Hide desktop view because am lazy to find anyother solution tbh lmao  */
+
 html {
     height: 100%;
 }
@@ -29,18 +38,18 @@ body {
 }   
 
 header {
-    padding: 1px;
+    padding: 1%;
     color: #fff;
     font-family: MADEOuterSans-Thin;
     line-height: 1.3;
     position: -webkit-sticky;
     position: sticky;
-    top: 40px;
+    top: 2%;
 }
 
 .header-right {
     float: right;
-    padding: 6px;
+    padding: 2%;
     text-align: right;
     font-family: MADEOuterSans-Thin;
     font-size: 13px;
@@ -51,7 +60,7 @@ img {
 }
 
 .logo {
-    padding: 5px;
+    padding: 1%;
     margin-left: 5%;
     border: 5px solid transparent;
     border-radius: 100%;
@@ -60,18 +69,50 @@ img {
 .namelogo {
     margin-right: auto;
     margin-left: auto;
+    width: 600px;
+    height: 600px;
 }
 
 .namelogo-right {
     color: #fff;
     float: right;
-    margin-right: 50px;
+    margin-right: 5%;
 }
 
 .jacquard-12-regular {
     font-family: "Jacquard 12", system-ui;
     font-weight: 400;
     font-style: normal;
+}
+
+.software {
+    font-size: 150px;
+    text-align: center;
+    padding-top: 130;
+    color: #fff;
+}
+
+.websites {
+    font-size: 150px;
+    text-align: center;
+    padding-top: 400;
+    color: #fff;
+}
+
+.software-website-images {
+    max-height: 5%;
+    max-width: 5%;
+    margin-top: 3%;
+    border-bottom: 0.5rem solid #fff;
+    padding-bottom: 1%;
+}
+
+.under-click {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    font-family: Hind ;
+    margin-top: -10%;
 }
 
 footer {
@@ -97,12 +138,63 @@ footer {
     top: 799;
 }
 
-/* UnComment these on Addition of these buttons lmao.
-.apps:hover {
-    border-bottom: 1px solid #fff; text-decoration: none;
+.inline-div {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.sites:hover {
-    border-bottom: 1px solid #fff; text-decoration: none;
+/* MOBILE VIEW */
+
+@media only screen and (max-width:767px) {
+
+    .desktop-display {display:none}
+    .mobile-display {display:block}
+
+    body {
+        min-height: 100%;
+        min-width: 145%;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        background: #1f1e1e;
+    }
+
+    .header-right {
+        font-size: 22px;
+    }
+
+    .namelogo {
+        margin-right: auto;
+        margin-left: auto;
+        width: 600px;
+        height: 600px;
+    }
+
+    .namelogo-right {
+        color: #fff;
+        float: none;
+        margin: 0;
+    }
+
+    .software {
+        font-size: 120px;
+        text-align: center;
+        padding-top: 130;
+        color: #fff;
+    }
+
+    .websites {
+        font-size: 120px;
+        text-align: center;
+        padding-top: 400;
+        color: #fff;
+    }
+
+    .under-click {
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+        font-family: Hind ;
+        margin-top: -10%;
+    }
 }
-*/ 
