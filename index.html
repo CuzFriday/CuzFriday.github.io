@@ -117,63 +117,91 @@
         class="namelogo"
       />
       <div class="namelogo-right">
-        <p
+        <span
+          class="montserrat namelogo-right"
           style="
             margin-top: 140px;
             font-size: 50px;
-            font-family: Montserrat;
             font-weight: bold;
             text-transform: uppercase;
           "
         >
-          hobbyist
+          hobby -
+          <span 
+          class="altfont" 
+          style="
+          font-weight: normal
+          "
+          >ist</span>
+        </span>
+        <span style=
+        "
+        width: 600px; 
+        word-wrap: break-word; 
+        font-family: Hind
+        ">
+          Hi there, this is Friday. As a novice coder in the HTML world, I created this basic layout purely for the purpose of testing and sharing websites and programs that I enjoy, 
+          find useful, or frequently recommend installing on any new operating system. 
+        </span>
+        <p style=
+        "
+        width: 600px; 
+        word-wrap: break-word; 
+        font-family: Hind
+        ">
+          Referring to OSs and Installation I'll be keeping this for myself in case I gradually lose the ability to use my brain and forget what I need in the future.
         </p>
-        <p style="width: 600px; word-wrap: break-word; font-family: Hind">
-          Hello, I'm Friday. This is my satirical Github page, which is still
-          under construction. On it, I plan to save software as well as
-          interesting links that I come across while browsing the internet.
-        </p>
-        <p style="width: 600px; word-wrap: break-word; font-family: Hind">
-          For your amusement as well as to simplify areas that you may not be
-          aware of!
+        <span style=
+        "
+        width: 600px; 
+        word-wrap: break-word; 
+        font-family: Hind
+        ">
+          Additionally, keep in mind some of my connections in case you ever felt the need to get in touch with me! (not in the weird way)
+        </span>
+        <p style=
+        "
+        width: 600px; 
+        word-wrap: break-word; 
+        font-family: Hind; 
+        font-size: 20px;
+        ">
+          - Friday
         </p>
       </div>
+
+      <hr class="divider" style="margin-top: 10%;">
     </section>
     <section2>
       <p
-        class="jacquard-12-regular software"
+      id = "software"
+      class="jacquard-12-regular software"
       >
       Softwares
       </p>
-      <p
-      class="under-click"
-      >
-      click here to see all
-      </p>
-      <div class = "inline-div desktop-display">
-        <img src="Assets/imgs/TB.png" class="software-website-images">
-        <img src="Assets/imgs/Sharex.png" class="software-website-images">
-        <img src="Assets/imgs/KeePass_Logo.svg" class="software-website-images">
-        <img src="Assets/imgs/V-Cord.png" class="software-website-images">
-        <img src="Assets/imgs/foobar2000.png" class="software-website-images">
-      </div>
+      <script>
+        var Softwareid = document.getElementById("software");
+
+        Softwareid.addEventListener("click", function() {
+          window.location.href = "https://cuzfriday.github.io/softwares.html"
+        })
+      </script>
+      <br>
     </section2>
     <section3>
       <p
+        id="website"
         class="jacquard-12-regular websites"
       >
         Websites
       </p>
-      <p
-      class="under-click"
-      >
-      click here to see all
-      </p>
-      <div class = "inline-div desktop-display">
-        <img src="Assets/imgs/gmh.svg" class="software-website-images">
-        <img src="Assets/imgs/record.png" class="software-website-images">
-        <img src="Assets/imgs/miku.png" class="software-website-images">
-      </div>
+      <script>
+        var Websiteid = document.getElementById("website");
+
+        Websiteid.addEventListener("click", function() {
+          window.location.href = "https://cuzfriday.github.io/websites.html"
+        })
+      </script>
     </section3>
 
     <footer

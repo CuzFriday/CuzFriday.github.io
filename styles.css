@@ -16,7 +16,7 @@ body {
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
-    background: #1f1e1e;
+    background: #1f1e1e ;
 }
 
 .links:link {
@@ -39,7 +39,7 @@ body {
 
 header {
     padding: 1%;
-    color: #fff;
+    color: #E6B31E;
     font-family: MADEOuterSans-Thin;
     line-height: 1.3;
     position: -webkit-sticky;
@@ -74,7 +74,7 @@ img {
 }
 
 .namelogo-right {
-    color: #fff;
+    color: #FCFAF1;
     float: right;
     margin-right: 5%;
 }
@@ -85,31 +85,32 @@ img {
     font-style: normal;
 }
 
+.montserrat {
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.altfont {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .software {
-    font-size: 150px;
+    font-size: 200px;
     text-align: center;
     padding-top: 130;
-    color: #fff;
+    color: #FCFAF1;
 }
 
 .websites {
-    font-size: 150px;
+    font-size: 200px;
     text-align: center;
     padding-top: 400;
-    color: #fff;
-}
-
-.software-website-images {
-    max-height: 5%;
-    max-width: 5%;
-    margin-top: 3%;
-    border-bottom: 0.5rem solid #fff;
-    padding-bottom: 1%;
+    color: #FCFAF1;
 }
 
 .under-click {
     font-size: 15px;
-    color: #fff;
+    color: #FCFAF1;
     text-align: center;
     font-family: Hind ;
     margin-top: -10%;
@@ -143,6 +144,28 @@ footer {
     justify-content: space-evenly;
 }
 
+.divider {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 1px solid #EEEEEE;
+}
+
+.linkstyle {
+    text-align: center;
+    font-family: hind;
+    text-transform: uppercase;
+    font-size: 200%;
+    color: #EEEEEE;
+    display:grid;
+}
+
+.title {
+    font-size: 50px; 
+    color: #E6B31E;  
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /* MOBILE VIEW */
 
 @media only screen and (max-width:767px) {
@@ -171,7 +194,7 @@ footer {
     }
 
     .namelogo-right {
-        color: #fff;
+        color: #EEEEEE;
         float: none;
         margin: 0;
     }
@@ -180,21 +203,26 @@ footer {
         font-size: 120px;
         text-align: center;
         padding-top: 130;
-        color: #fff;
+        color: #EEEEEE;
     }
 
     .websites {
         font-size: 120px;
         text-align: center;
         padding-top: 400;
-        color: #fff;
+        color: #EEEEEE;
     }
 
     .under-click {
         font-size: 40px;
-        color: #fff;
+        color: #EEEEEE;
         text-align: center;
         font-family: Hind ;
         margin-top: -10%;
+    }
+
+    .gura {
+        position: fixed;
+        top: 1200;
     }
 }
