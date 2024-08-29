@@ -153,6 +153,17 @@ footer {
     border-top: 1px solid #EEEEEE;
 }
 
+.cursor-bubble {
+    position: fixed;
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    background-color: #333333;
+    border-radius: 50%;
+    pointer-events: none; /* To ensure the bubble doesn't interfere with cursor events */
+    z-index: 9999; /* Ensure the bubble stays on top of other elements */
+}
+
 .linkstyle {
     text-align: center;
     font-family: hind;
