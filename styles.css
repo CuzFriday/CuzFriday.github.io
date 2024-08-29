@@ -9,6 +9,7 @@
 
 html {
     height: 100%;
+    cursor: cell;
 }
 
 body {
@@ -22,18 +23,18 @@ body {
 .links:link {
     color: inherit;
     text-decoration: none;
-    cursor: default;
+    cursor: cell;
 }
 
 .links:hover {
     color: inherit;
     text-decoration: underline;
-    cursor: default;
+    cursor: cell;
 }
 
 .links:visited {
     color: inherit;
-    cursor: default;
+    cursor: cell;
     text-decoration: none;
 }   
 
@@ -69,6 +70,8 @@ img {
 .namelogo {
     margin-right: auto;
     margin-left: auto;
+    display: inline;
+    margin-bottom: 150px;
     width: 600px;
     height: 600px;
 }
@@ -117,13 +120,13 @@ img {
 }
 
 footer {
-    cursor: default;
+    cursor: cell;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 2%;
 }
 
 .Contact {
-    cursor: default;
+    cursor: cell;
     transition: font-size 0.8s ease;
     margin-top: 30%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
@@ -136,7 +139,7 @@ footer {
 
 .gura {
     position: fixed;
-    top: 799;
+    top: 765;
 }
 
 .inline-div {
