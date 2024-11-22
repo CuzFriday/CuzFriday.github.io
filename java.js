@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     // Select all elements with a specific class
     const LogoElement = document.querySelectorAll('.logo');
     const RightTextOfLogoElement = document.querySelectorAll('.namelogo-right')
@@ -6,6 +7,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const cursorBubble = document.querySelector('.cursor-bubble');
 
     let prevScrollPos = window.scrollY;
+
+    window.addEventListener("load", (event) => {
+        $.getJSON('https://discordlookup.mesalytic.moe/v1/user/321288764708356106', function(data) {
+            var Element = document.getElementById("AvatarLink");
+
+            if (data.avatar["is_animated"] == true) {
+
+                const link = document.createElement("a");
+
+                link.href = data.avatar["link"] + ".gif";
+                
+                Element.src = link
+
+            }else{
+
+                Element.src = data.avatar["link"];
+
+            }
+            console.log(data.avatar["link"]);
+            console.log(data.avatar["is_animated"])
+        })
+    })
 
     // Function to change opacity based on scroll direction
     window.addEventListener('scroll', function() {
@@ -41,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     })
 
+    /*
     window.addEventListener('scroll', function() {
 
         const scrollFromTop = window.scrollY;
@@ -56,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         });
     })
+    */
 
     document.addEventListener('mousemove', function(e) {
 

@@ -25,6 +25,7 @@
     <title>Friday's Website</title>
     <link rel="stylesheet" href="styles.css"/>
     <script src="java.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
     <link rel="icon" type="image/x-icon" href="Assets/imgs/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,6 +39,7 @@
   <body>
     <header>
       <img
+        id="AvatarLink"
         src="Assets/imgs/Profile.jpg"
         alt="My Profile"
         class="Logo"
@@ -77,7 +79,7 @@
           roblox
         </a>
         <br>
-        <a href="https://www.twitch.tv/fridaycuz" target="_blank" class="links">
+        <a href="https://www.twitch.tv/cuzfriday" target="_blank" class="links">
           twitch
         </a>
         <br>
@@ -123,7 +125,6 @@
         class="namelogo"
       />
       <div class="namelogo-right">
-
         <span
           class="montserrat namelogo-right"
           style="
@@ -147,7 +148,7 @@
         word-wrap: break-word; 
         font-family: Hind
         ">
-          Hi there, this is Friday. As a novice coder in the HTML world, I created this basic layout purely for the purpose of testing and sharing websites and programs that I enjoy, 
+          Hi there, this is Friday. As a novice coder, I created this basic layout purely for the purpose of testing and sharing websites and programs that I enjoy, 
           find useful, or frequently recommend installing on any new operating system. 
         </span>
         <p style=
@@ -164,7 +165,7 @@
         word-wrap: break-word; 
         font-family: Hind
         ">
-          Additionally, keep in mind some of my connections in case you ever felt the need to get in touch with me! (not in the weird way)
+          Additionally, keep in mind some of my connections in case you ever felt the need to get in touch with me!
         </span>
         <p style=
         "
@@ -176,10 +177,10 @@
           - Friday
         </p>
       </div>
-
-      <hr class="divider" style="margin-top: 10%;">
+      <hr class="divider" style="margin-top: 20%;">
+      <p style="color: white ; text-align: center; font-family:monospace;">Click For More<p>
     </section>
-    <section2>
+    <section class="section2">
       <p
       id = "software"
       class="jacquard-12-regular software"
@@ -193,9 +194,9 @@
           window.location.href = "https://cuzfriday.github.io/softwares.html"
         })
       </script>
-      <br>
-    </section2>
-    <section3>
+
+    </section>
+    <section class="section3">
       <p
         id="website"
         class="jacquard-12-regular websites"
@@ -209,15 +210,18 @@
           window.location.href = "https://cuzfriday.github.io/websites.html"
         })
       </script>
-    </section3>
+    </section>    
+    <div class="section4" style=" background-color: #E6B31E;">
+    
+    <figure>
+      <figcaption style="color: #1e1e1e; font-size: 350%"  class="jacquard-12-regular"> Extra </figcaption>
+      <figcaption class="jacquard-12-regular"> | fridayworkacc@gmail.com </figcaption>
+      <figcaption class="jacquard-12-regular"> | @fridayishot on discord </figcaption>
+      <img src="Assets/imgs/INFOFooter2.png" class="INFOFooter"> 
+    </figure>
 
-    <footer
-      style="text-align: center; color: #fff"
-      id="contact"
-      class="Contact"
-    >
-      Contact
-    </footer>
+    <!--
+      
     <script>
       var contactid = document.getElementById("contact");
       var textToCopy = "Fridayworkacc@gmail.com";
@@ -225,7 +229,7 @@
       contactid.addEventListener("mouseover", function () {
         contactid.textContent = "Fridayworkacc@gmail.com";
         contactid.classList.add("expand");
-      });
+      }); 
 
       contactid.addEventListener("click", function () {
         navigator.clipboard
@@ -248,6 +252,7 @@
       });
     </script>
 
-    <footer style="text-align: center; color: #fff">© Copyright 2024</footer>
+    !-->
+  </div>
   </body>
 </html>

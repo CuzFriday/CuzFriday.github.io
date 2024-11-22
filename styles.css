@@ -15,8 +15,10 @@ html {
 body {
     min-height: 100%;
     margin-top: 2%;
+    /*
     margin-left: 5%;
     margin-right: 5%;
+    */
     background: #1f1e1e ;
 }
 
@@ -46,6 +48,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 2%;
+    z-index: 99;
 }
 
 .header-right {
@@ -73,13 +76,15 @@ img {
     display: inline;
     margin-bottom: 150px;
     width: 600px;
+    margin-left: 5%;
     height: 600px;
 }
 
 .namelogo-right {
     color: #FCFAF1;
     float: right;
-    margin-right: 5%;
+    margin-right: 15%;
+    margin-left: 10%;
 }
 
 .jacquard-12-regular {
@@ -100,14 +105,14 @@ img {
 .software {
     font-size: 200px;
     text-align: center;
-    padding-top: 130;
+    padding-top: 0;
     color: #FCFAF1;
 }
 
 .websites {
     font-size: 200px;
     text-align: center;
-    padding-top: 400;
+    padding-top: 0;
     color: #FCFAF1;
 }
 
@@ -123,9 +128,11 @@ footer {
     cursor: cell;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 2%;
+    color: white;
 }
 
 .Contact {
+    font-size: 200%;
     cursor: cell;
     transition: font-size 0.8s ease;
     margin-top: 30%;
@@ -148,8 +155,6 @@ footer {
 }
 
 .divider {
-    margin-left: 20%;
-    margin-right: 20%;
     border-top: 1px solid #EEEEEE;
 }
 
@@ -162,6 +167,11 @@ footer {
     border-radius: 50%;
     pointer-events: none; /* To ensure the bubble doesn't interfere with cursor events */
     z-index: 9999; /* Ensure the bubble stays on top of other elements */
+}
+
+figcaption {
+    color: white;
+    font-size: 200%;
 }
 
 .linkstyle {
@@ -178,6 +188,22 @@ footer {
     color: #E6B31E;  
     text-align: center;
     text-transform: uppercase;
+}
+
+.infofooter {
+    width: 100%;
+}
+
+.section2 {
+    background-color: #1f1e1e;
+}
+
+.section3 {
+    background-color: #1f1e1e;
+}
+
+.section4 {
+    background-color: #FCFAF1;
 }
 
 /* MOBILE VIEW */
