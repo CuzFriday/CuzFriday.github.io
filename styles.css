@@ -155,11 +155,7 @@ footer {
 }
 
 .divider {
-<<<<<<< HEAD
     border-top: 1px solid #EEEEEE; 
-=======
-    border-top: 1px solid #EEEEEE;
->>>>>>> 1e0af73f3849d2d65e3333ad67af1279a9a0975b
 }
 
 .cursor-bubble {
@@ -210,14 +206,11 @@ figcaption {
     background-color: #FCFAF1;
 }
 
-<<<<<<< HEAD
 iframe {
     border-radius:1px; float: right; margin-top: 6%; margin-right: 10%;
     width: 40%;
 }
 
-=======
->>>>>>> 1e0af73f3849d2d65e3333ad67af1279a9a0975b
 /* MOBILE VIEW */
 
 @media only screen and (max-width:767px) {
