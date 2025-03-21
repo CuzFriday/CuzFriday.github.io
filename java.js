@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+<<<<<<< HEAD
     function isMobile() {
         return /Mobi|Android/i.test(navigator.userAgent);
     }
 
+=======
+>>>>>>> 1e0af73f3849d2d65e3333ad67af1279a9a0975b
     // Select all elements with a specific class
     const LogoElement = document.querySelectorAll('.logo');
     const RightTextOfLogoElement = document.querySelectorAll('.namelogo-right')
@@ -76,7 +79,10 @@ document.addEventListener('DOMContentLoaded', function() {
        }
     });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1e0af73f3849d2d65e3333ad67af1279a9a0975b
     /*
     window.addEventListener('scroll', function() {
 
