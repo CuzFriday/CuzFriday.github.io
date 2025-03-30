@@ -1,4 +1,4 @@
-Head to https://www.cuzfriday.github.io for the actual viewing experience
+Head to https://cuzfriday.github.io for the actual viewing experience
 
 or to fully view the entire page in its entirety, continue going through the files ig lmao.
 
