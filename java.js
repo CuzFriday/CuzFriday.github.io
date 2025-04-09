@@ -29,8 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 Element.src = data.avatar["link"];
 
             }
-            console.log(data.avatar["link"]);
-            console.log(data.avatar["is_animated"])
         })
     })
 

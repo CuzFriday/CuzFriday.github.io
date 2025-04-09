@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, inital-scale=1.0" />
         <title>Friday's Website</title>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="Softwares.css"/>
         <script src="java.js"></script>
         <link rel="icon" type="image/x-icon" href="Assets/imgs/favicon.ico" />
     
@@ -15,94 +15,118 @@
           rel="stylesheet"
         />
     </head>
-
     <body>
-        <img src="Assets/imgs//gura.gif" width="100" height="100" class="gura" /> <!-- cause why not? -->
-        <p class="title montserrat"
-        >
-        Will add description later
-        </p>
-        <div class="linkstyle">
-            <a
-            href="https://download.mozilla.org/?product=thunderbird-115.12.1-SSL&os=win64&lang=en-US"
-            target="_blank"
-            class="links">
-            Thunderbird
-            </a>
-            <a 
-            href="https://vencord.dev/"
-            target="_blank"
-            class="links">
-            vencord
-            </a>
-            <a 
-            href="https://prdownloads.sourceforge.net/windirstat/windirstat1_1_2_setup.exe"
-            target="_blank"
-            class="links">
-            windirstat
-            </a>
-            <a 
-            href="https://www.voidtools.com/downloads/"
-            target="_blank"
-            class="links">
-            Everything
-            </a>
-            <a 
-            href="https://vscodium.com/#install"
-            target="_blank"
-            class="links">
-            vscodium
-            </a>
-            <a 
-            href="https://www.foobar2000.org/getfile/foobar2000_v2.1.5.exe"
-            target="_blank"
-            class="links">
-            foobar2000
-            </a>
-            <a 
-            href="https://getsharex.com/"
-            target="_blank"
-            class="links">
-            ShareX
-            </a>
-            <a 
-            href="https://windscribe.com/"
-            target="_blank"
-            class="links">
-            Windscribe
-            </a>
-            <a 
-            href="https://www.videolan.org/"
-            target="_blank"
-            class="links">
-            VLC
-            <a 
-            href="https://keepass.info/"
-            target="_blank"
-            class="links">
-            Keepass
-            </a>
-            <a 
-            href="https://krita.org/en/"
-            target="_blank"
-            class="links">
-            Krita
-            </a>
-
-                <hr class="divider">
-
-            <a 
-            href="https://www.gyan.dev/ffmpeg/builds/"
-            target="_blank"
-            class="links">
-            FFMPEG
-            </a>
-            <a 
-            href="https://github.com/yt-dlp/yt-dlp"
-            target="_blank"
-            class="links">
-            youtube downloader
-            </a>
+        <div class="container">
+            
+            <div class="template-container" id="templates">
+                
+            </div>
         </div>
+
+        
+
+        <script>
+
+        const platformIcons = {
+            windows: '/Assets/imgs/WindowsIcon.png', 
+            mac: '/Assets/imgs/AppleIcon.png',    
+            linux: '/Assets/imgs/LinuxIcon.png'   
+        };
+
+            const templates = [
+                {
+                    name: 'Go Back',
+                    description: 'Click this to go back lmao, I will add more stuff so check back soon!',
+                    icon: 'https://media.tenor.com/em-2K9FWWKkAAAAi/miku-headbang.gif',
+                    thumbnail: 'https://media1.tenor.com/m/BtfyXbngqtEAAAAC/hatsune-miku.gif',
+                    compatibility: [],
+                    link: 'index.html'
+                },
+                {
+                    name: 'Vencord',
+                    description: 'A Discord Tweaking tool, it can involve various things such as adding a new custom theme, plugins, and other customizable features. a sort of DIY',
+                    icon: '/Assets/imgs/V-Cord.png',
+                    thumbnail: 'https://vencord.dev/assets/cute-logo.avif',
+                    compatibility: ['windows', 'mac', 'linux'],
+                    link: 'https://vencord.dev/'
+                },
+                {
+                    name: 'ShareX',
+                    description: 'Lightweight, Accessible and built in editing features, upload and save all, in the entirety of this software.',
+                    icon: '/Assets/imgs/Sharex.png',
+                    thumbnail: 'https://getsharex.com/img/screenshots/ImageEffects.png',
+                    compatibility: ['windows'],
+                    link: 'https://getsharex.com/'
+                },
+                {
+                    name: 'Keepass',
+                    description: 'Password Manager with the key features of compatibility and streamlined solutions for password generation and website integration',
+                    icon: '/Assets/imgs/KeePass_Logo.svg',
+                    thumbnail: 'https://keepass.info/screenshots/main_big.png',
+                    compatibility: ['windows', 'mac', 'linux'],
+                    link: 'https://keepass.info/'
+                },
+                {
+                    name: 'Windirstat',
+                    description: 'This software aged like fine wine, a incredibly useful and one that I would recommend for storage upkeep! (it has been updated to be faster than it once was.)',
+                    icon: '/Assets/imgs/windirstat.png',
+                    thumbnail: 'https://windirstat.net/images/windirstat.jpg',
+                    compatibility: ['windows'],
+                    link: 'https://windirstat.net/download.html'
+                },
+                {
+                    name: 'Foobar2000',
+                    description: 'A Minimalistic, modular music player. USE 32-bit if you want to use most of the popular plugins and premade community themes.',
+                    icon: '/Assets/imgs/foobar2000.png',
+                    thumbnail: 'https://www.foobar2000.org/images/th/main-alternate.png',
+                    compatibility: ['windows'],
+                    link: 'https://www.foobar2000.org/'
+                },
+            ];
+
+        </script>
+
+        <script>
+
+            window.onload = function() {
+                const templateContainer = document.getElementById('templates');
+                
+                templates.forEach(template => {
+                    const templateElement = document.createElement('div');
+                    templateElement.className = 'template-item';
+                    
+                 
+                    const compatibilityHtml = template.compatibility.map(platform => 
+                        `<div class="compatibility-icon" title="${platform}">
+                            <img src="${platformIcons[platform]}" alt="${platform}">
+                        </div>`
+                    ).join('');
+                    
+                    templateElement.innerHTML = `
+                    <a href="${template.link}" style="text-decoration: none;">
+                        <div class="thumbnail">
+                            <img src="${template.thumbnail}" alt="${template.name}">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <div class="icon">
+                                    <img src="${template.icon}" alt="Icon">
+                                </div>
+                                <div class="title">${template.name}</div>
+                            </div>
+                            <div class="description">${template.description}</div>
+                            <div class="compatibility">
+                                ${compatibilityHtml}
+                            </div>
+                        </div>
+                    `;
+                    
+                    templateContainer.appendChild(templateElement);
+                });
+            }
+        </script>
     </body>
 </html>
+
+
+

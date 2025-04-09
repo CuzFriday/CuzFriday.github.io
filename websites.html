@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, inital-scale=1.0" />
         <title>Friday's Website</title>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="Websites.css"/>
         <script src="java.js"></script>
         <link rel="icon" type="image/x-icon" href="Assets/imgs/favicon.ico" />
     
@@ -15,62 +15,94 @@
           rel="stylesheet"
         />
     </head>
-
     <body>
-        <img src="Assets/imgs//gura.gif" width="100" height="100" class="gura" /> <!-- cause why not? -->
-        <p class="title montserrat"
-        >
-        Will add description later
-        </p>
-        <div class="linkstyle">
-            <a
-            href="https://atlasos.net/"
-            target="_blank"
-            class="links">
-            Atlas Os
-            </a>
-            <a 
-            href="https://g-meh.com"
-            target="_blank"
-            class="links">
-            g-meh
-            </a>
-            <a 
-            href="https://colordesigner.io/color-palette-from-image"
-            target="_blank"
-            class="links">
-            color designer
-            </a>
-            <a 
-            href="https://boopy.club/"
-            target="_blank"
-            class="links">
-            boopy club
-            </a>
-            <a 
-            href="https://doubledouble.top/"
-            target="_blank"
-            class="links">
-            Double Double
-            </a>
-            <a 
-            href="https://goonlinetools.com/lua-minifier/"
-            target="_blank"
-            class="links">
-            Lua Minifier
-            </a>
-            <a 
-            href="https://aidn.jp/mikutap/"
-            target="_blank"
-            class="links">
-            Mikutap
-            </a>
-            <a 
-            href="https://www.majorgeeks.com/"
-            target="_blank"
-            class="links">
-            Major Geeks
-            </a>
+        <div class="container">
+            
+            <div class="template-container" id="templates">
+                
+            </div>
         </div>
+
+        
+
+        <script>
+
+        const platformIcons = {
+            windows: '/Assets/imgs/WindowsIcon.png', 
+            mac: '/Assets/imgs/AppleIcon.png',     
+            linux: '/Assets/imgs/LinuxIcon.png'    
+        };
+
+            const templates = [
+                {
+                    name: 'Go Back',
+                    description: 'Click this to go back lmao, I will add more stuff so check back soon!',
+                    icon: 'https://media.tenor.com/em-2K9FWWKkAAAAi/miku-headbang.gif',
+                    thumbnail: 'https://media1.tenor.com/m/BtfyXbngqtEAAAAC/hatsune-miku.gif',
+                    compatibility: [],
+                    link: 'index.html'
+                },
+                {
+                    name: 'G-Meh',
+                    description: 'Music related DAWS and plugins, I do use this but take this as a ,,trust me bro, just apply your normal rituals when downloading from sites like these.',
+                    icon: '/Assets/imgs/gmh.svg',
+                    thumbnail: '/Assets/imgs/gmh.svg',
+                    compatibility: ['windows', 'mac'],
+                    link: 'https://g-meh.com/'
+                },
+                {
+                    name: 'r/Piracy Megathread',
+                    description: 'A incredible megathread full of useful and community rated safe sites, still heed the warnings and READ.',
+                    icon: 'https://styles.redditmedia.com/t5_2qmox/styles/communityIcon_i9fccrqzl8ae1.png',
+                    thumbnail: 'https://styles.redditmedia.com/t5_2qmox/styles/bannerBackgroundImage_hjuavt6lntud1.png?width=2176&frame=1&auto=webp&s=caa7f86a07ca91265240bb26d268351cd20df62e',
+                    compatibility: ['windows', 'mac', 'linux'],
+                    link: 'https://old.reddit.com/r/Piracy/wiki/megathread'
+                },
+            ];
+
+        </script>
+
+        <script>
+
+            window.onload = function() {
+                const templateContainer = document.getElementById('templates');
+                
+                templates.forEach(template => {
+                    const templateElement = document.createElement('div');
+                    templateElement.className = 'template-item';
+                    
+                 
+                    const compatibilityHtml = template.compatibility.map(platform => 
+                        `<div class="compatibility-icon" title="${platform}">
+                            <img src="${platformIcons[platform]}" alt="${platform}">
+                        </div>`
+                    ).join('');
+                    
+                    templateElement.innerHTML = `
+                    <a href="${template.link}" style="text-decoration: none;">
+                        <div class="thumbnail">
+                            <img src="${template.thumbnail}" alt="${template.name}">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <div class="icon">
+                                    <img src="${template.icon}" alt="Icon">
+                                </div>
+                                <div class="title">${template.name}</div>
+                            </div>
+                            <div class="description">${template.description}</div>
+                            <div class="compatibility">
+                                ${compatibilityHtml}
+                            </div>
+                        </div>
+                    `;
+                    
+                    templateContainer.appendChild(templateElement);
+                });
+            }
+        </script>
     </body>
 </html>
+
+
+
